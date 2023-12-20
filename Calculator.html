@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    const operator = prompt("Enter operator ( +, -, * or / ):");
+    const num1 = parseFloat(prompt("Enter first number: "));
+    const num2 = parseFloat(prompt("Enter second number: "));
+
+    let result;
+
+
+    if (operator == '+') {
+        result = num1 + num2;
+    }
+
+    else if (operator == '-') {
+        result = num1 - num2;
+    }
+    
+    else if (operator == '*') {
+        result = num1 * num2;
+    }
+    else {
+        result = num1 / num2;
+    }
+
+
+    document.write("Result: " + result );
+
+    </script>
+</body>
+</html>
